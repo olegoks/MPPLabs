@@ -23,7 +23,7 @@ namespace Facker
                 throw new Exception();
             }
             Type elementType = type.GetElementType();
-            CustomFacker facker = new CustomFacker();
+            CustomFacker facker = new CustomFacker("D:\\C++\\MPPLabs\\MPPLabs\\MPPLab2\\Facker\\bin\\Debug\\netcoreapp3.1\\");
             Array result = Array.CreateInstance(elementType, (byte)facker.Create(typeof(byte)));
             for (int i = 0; i < result.Length; i++)
             {
@@ -35,6 +35,11 @@ namespace Facker
         public bool IsTypeValid(Type type)
         {
             return (type.IsArray);
+        }
+
+        public Type GetGeneratedType()
+        {
+            return null;
         }
     }
 }

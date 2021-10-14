@@ -2,32 +2,66 @@
 using System.Reflection;
 using System.Collections.Generic;
 using Facker.BaseTypesGenerators;
+using System.IO;
 namespace Facker
 {
     public class CustomFacker
     {
-
         private Dictionary<Type, IGenerator> baseTypesGenerators;
         private ArrayGenerator arrayGenerator;
+        private String pluginsPath;
         public class Exception : System.Exception
         {
 
         }
-        public CustomFacker()
+        public CustomFacker(String pluginsPath)
         {
             baseTypesGenerators = new Dictionary<Type, IGenerator>();
-            baseTypesGenerators.Add(typeof(bool), new BoolGenerator());
             baseTypesGenerators.Add(typeof(byte), new ByteGenerator());
             baseTypesGenerators.Add(typeof(double), new DoubleGenerator());
-            baseTypesGenerators.Add(typeof(float), new FloatGenerator());
             baseTypesGenerators.Add(typeof(int), new IntGenerator());
             baseTypesGenerators.Add(typeof(long), new LongGenerator());
             baseTypesGenerators.Add(typeof(short), new ShortGenerator());
             baseTypesGenerators.Add(typeof(uint), new UIntGenerator());
             baseTypesGenerators.Add(typeof(ulong), new ULongGenerator());
             baseTypesGenerators.Add(typeof(ushort), new UShortGenerator());
+            baseTypesGenerators.Add(typeof(DateTime), new DateTimeGenerator());
             arrayGenerator = new ArrayGenerator();
+            this.pluginsPath = pluginsPath;
 
+            List<Assembly> assemblies = new List<Assembly>();
+
+            try
+            {
+                foreach (string file in Directory.GetFiles(pluginsPath, "*.dll"))
+                {
+                    try
+                    {
+                        assemblies.Add(Assembly.LoadFile(file));
+                    }
+                    catch (BadImageFormatException)
+                    { }
+                    catch (FileLoadException)
+                    { }
+                }
+            }
+            catch (DirectoryNotFoundException)
+            { }
+
+            foreach (Assembly assembly in assemblies)
+            {
+                foreach (Type type in assembly.GetTypes())
+                {
+                    foreach (Type typeInterface in type.GetInterfaces())
+                    {
+                        if (typeInterface.Equals(typeof(IGenerator)))
+                        {
+                            IGenerator pluginGenerator = (IGenerator)Activator.CreateInstance(type);
+                            baseTypesGenerators.Add(pluginGenerator.GetGeneratedType(), pluginGenerator);
+                        }
+                    }
+                }
+            }
         }
         private bool IsTypeBasic(Type type)
         {
@@ -71,6 +105,10 @@ namespace Facker
             } else if (type.IsClass && type.IsGenericType)
             {
 
+            } else if (type == typeof(System.Char))
+            {
+                const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                created = chars[(int)((uint)GetBaseTypeGenerator(typeof(uint)).Create(typeof(uint))) % chars.Length];
             }
             
             return created;

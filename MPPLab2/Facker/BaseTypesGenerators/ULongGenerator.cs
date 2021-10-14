@@ -21,5 +21,9 @@ namespace Facker.BaseTypesGenerators
         {
             return (type == typeof(ulong));
         }
+        public Type GetGeneratedType()
+        {
+            return typeof(ulong);
+        }
     }
 }

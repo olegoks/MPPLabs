@@ -1,0 +1,12 @@
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\Facker.exe
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\BoolGeneratorPlug.deps.json
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\BoolGeneratorPlug.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\BoolGeneratorPlug.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\Facker.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\Facker.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\BoolGeneratorPlug.AssemblyInfoInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\BoolGeneratorPlug.AssemblyInfo.cs
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\BoolGeneratorPlug.csproj.CoreCompileInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\BoolGeneratorPlug.csproj.CopyComplete
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\BoolGeneratorPlug.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\BoolGeneratorPlug.pdb

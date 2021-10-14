@@ -4,11 +4,12 @@ using System.Text;
 using Facker;
 namespace Facker.BaseTypesGenerators
 {
-    class BoolGenerator : IGenerator {
+    class BoolGenerator : IGenerator
+    {
 
         public object Create(Type type)
         {
-            if(type != typeof(bool))
+            if (type != typeof(bool))
             {
                 throw new Exception();
             }
@@ -22,6 +23,11 @@ namespace Facker.BaseTypesGenerators
         public bool IsTypeValid(Type type)
         {
             return (type == typeof(bool));
+        }
+
+        public Type GetGeneratedType()
+        {
+            return typeof(bool);
         }
 
     }

@@ -5,10 +5,18 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facker", "Facker.csproj", "{1B658513-6689-4495-876C-6B490443EC16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FackerUnitTests", "..\Unit Tests\FackerUnitTests\FackerUnitTests.csproj", "{C6BB1AC3-37D9-4550-97AA-DE7E85DDD009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FackerUnitTests", "..\Unit Tests\FackerUnitTests\FackerUnitTests.csproj", "{C6BB1AC3-37D9-4550-97AA-DE7E85DDD009}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1B658513-6689-4495-876C-6B490443EC16} = {1B658513-6689-4495-876C-6B490443EC16}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\ClassLibrary1\ClassLibrary1.csproj", "{4FE2B7FC-A906-4465-943B-8D177889E92C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatGeneratorPlugin", "..\ClassLibrary2\FloatGeneratorPlugin.csproj", "{192F7C1B-6D5B-4CDA-BDAB-C574531B40EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolGeneratorPlugin", "..\BoolGeneratorPlugin\BoolGeneratorPlugin.csproj", "{9EAA7BDC-BB24-466D-AFA7-E5F8865A2DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolGeneratorPlug", "..\ClassLibrary3\BoolGeneratorPlug.csproj", "{C40CC7F5-756F-4B73-B9B6-5D0CAC56700C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +32,22 @@ Global
 		{C6BB1AC3-37D9-4550-97AA-DE7E85DDD009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6BB1AC3-37D9-4550-97AA-DE7E85DDD009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6BB1AC3-37D9-4550-97AA-DE7E85DDD009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE2B7FC-A906-4465-943B-8D177889E92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE2B7FC-A906-4465-943B-8D177889E92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE2B7FC-A906-4465-943B-8D177889E92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE2B7FC-A906-4465-943B-8D177889E92C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192F7C1B-6D5B-4CDA-BDAB-C574531B40EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192F7C1B-6D5B-4CDA-BDAB-C574531B40EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192F7C1B-6D5B-4CDA-BDAB-C574531B40EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192F7C1B-6D5B-4CDA-BDAB-C574531B40EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAA7BDC-BB24-466D-AFA7-E5F8865A2DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAA7BDC-BB24-466D-AFA7-E5F8865A2DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAA7BDC-BB24-466D-AFA7-E5F8865A2DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAA7BDC-BB24-466D-AFA7-E5F8865A2DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40CC7F5-756F-4B73-B9B6-5D0CAC56700C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40CC7F5-756F-4B73-B9B6-5D0CAC56700C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40CC7F5-756F-4B73-B9B6-5D0CAC56700C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40CC7F5-756F-4B73-B9B6-5D0CAC56700C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

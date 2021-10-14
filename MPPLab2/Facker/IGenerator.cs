@@ -9,5 +9,7 @@ namespace Facker
         public object Create(Type type);
         public bool IsTypeValid(Type type);
 
+        public Type GetGeneratedType();
+
     }
 }

@@ -1,0 +1,13 @@
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\bin\Debug\netcoreapp3.1\Facker.exe
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\bin\Debug\netcoreapp3.1\FloatGeneratorPlugin.deps.json
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\bin\Debug\netcoreapp3.1\FloatGeneratorPlugin.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\bin\Debug\netcoreapp3.1\FloatGeneratorPlugin.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\bin\Debug\netcoreapp3.1\Facker.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\bin\Debug\netcoreapp3.1\Facker.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.csprojAssemblyReference.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.AssemblyInfoInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.AssemblyInfo.cs
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.csproj.CoreCompileInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.csproj.CopyComplete
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary2\obj\Debug\netcoreapp3.1\FloatGeneratorPlugin.pdb

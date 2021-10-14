@@ -17,7 +17,6 @@ D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\bin\Debug\netcoreapp3.1\Facker.runtimeconf
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\bin\Debug\netcoreapp3.1\Facker.runtimeconfig.dev.json
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\bin\Debug\netcoreapp3.1\Facker.dll
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\bin\Debug\netcoreapp3.1\Facker.pdb
-D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\obj\Debug\netcoreapp3.1\Facker.csprojAssemblyReference.cache
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\obj\Debug\netcoreapp3.1\Facker.AssemblyInfoInputs.cache
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\obj\Debug\netcoreapp3.1\Facker.AssemblyInfo.cs
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Facker\obj\Debug\netcoreapp3.1\Facker.csproj.CoreCompileInputs.cache

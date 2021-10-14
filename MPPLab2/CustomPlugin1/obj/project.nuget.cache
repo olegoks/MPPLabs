@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "5PitWzrOMTsxiuVldGEtl/eowhpLC1SQf/mTcnMY6fUzg9+2Ew3yCSqOqx2hw00UisCn3ZSQuXUZd173rwv3kA==",
+  "success": false,
+  "projectFilePath": "D:\\C++\\MPPLabs\\MPPLabs\\MPPLab2\\CustomPlugin1\\CustomPlugin1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект Facker несовместим с netstandard2.0 (.NETStandard,Version=v2.0). Проект Facker поддерживает: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "Facker",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

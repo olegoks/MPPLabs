@@ -1,0 +1,12 @@
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\Facker.exe
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\ClassLibrary3.deps.json
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\ClassLibrary3.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\ClassLibrary3.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\Facker.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\bin\Debug\netcoreapp3.1\Facker.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\ClassLibrary3.AssemblyInfoInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\ClassLibrary3.AssemblyInfo.cs
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\ClassLibrary3.csproj.CoreCompileInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\ClassLibrary3.csproj.CopyComplete
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\ClassLibrary3.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab2\ClassLibrary3\obj\Debug\netcoreapp3.1\ClassLibrary3.pdb

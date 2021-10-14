@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hrhi6sGc9T3dgf02DHeGnTJHeZNbq+87pPdqoCJhHeEggVSNdleRdU+gpTm67iK4/P+cW+NUEDDw8akX1QRXUA==",
+  "success": true,
+  "projectFilePath": "D:\\C++\\MPPLabs\\MPPLabs\\MPPLab2\\CustomPlugin2\\CustomPlugin2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

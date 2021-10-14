@@ -1,0 +1,3 @@
+D:\C++\MPPLabs\MPPLabs\MPPLab2\CustomPlugin2\obj\Debug\netstandard2.0\CustomPlugin2.AssemblyInfoInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab2\CustomPlugin2\obj\Debug\netstandard2.0\CustomPlugin2.AssemblyInfo.cs
+D:\C++\MPPLabs\MPPLabs\MPPLab2\CustomPlugin2\obj\Debug\netstandard2.0\CustomPlugin2.csproj.CoreCompileInputs.cache

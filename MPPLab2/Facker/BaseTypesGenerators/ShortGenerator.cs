@@ -21,5 +21,9 @@ namespace Facker.BaseTypesGenerators
         {
             return (type == typeof(short));
         }
+        public Type GetGeneratedType()
+        {
+            return typeof(short);
+        }
     }
 }
