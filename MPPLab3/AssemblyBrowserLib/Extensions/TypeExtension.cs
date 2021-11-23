@@ -9,52 +9,47 @@ namespace AssemblyBrowserLib.Extensions
 {
     public static class TypeExtensions
     {
-        public static Node GetNode(this Type type)
-        {
-            var accessModifier = type.GetAccessModifier();
-            var typeModifier = type.GetTypeModifier();
-            var classType = type.GetClassType();
-            var fullType = type.FullName;
-            var name = type.ToGenericTypeString();
+        public static Node GetNode(this Type type) {
 
+            //Getting type params.
+            string accessModifier = type.GetAccessModifier();
+            string typeModifier = type.GetTypeModifier();
+            string classType = type.GetClassType();
+            string fullType = type.FullName;
+            string name = type.ToGenericTypeString();
+
+            //Creating type node.
             Node typeNode = new Node("[type]", accessModifier: accessModifier, typeModifier: typeModifier,
                 classType: classType, fullType: fullType, name: name);
 
-            var typeMembers = type.GetMembers(NonPublic
+            var typeMembers = type.GetMembers( NonPublic
                                              | Instance
                                              | Public
                                              | Static
                                              | DeclaredOnly);
 
+            //If type has members add them as internal nodes to the type node.
             foreach (var member in typeMembers)
             {
                 Node node = null;
-                if (member.MemberType == MemberTypes.Method)
-                {   
+                if (member.MemberType == MemberTypes.Method) {   
                     node = ((MethodInfo)member).GetNode();
                 }
-                else if (member.MemberType == MemberTypes.Property)
-                {
+                else if (member.MemberType == MemberTypes.Property) {
                     node = ((PropertyInfo)member).GetNode();
                 }
-                else if (member.MemberType == MemberTypes.Field)
-                {
+                else if (member.MemberType == MemberTypes.Field) {
                     node = ((FieldInfo)member).GetNode();
                 }
-                else if (member.MemberType == MemberTypes.Event)
-                {
+                else if (member.MemberType == MemberTypes.Event) {
                     node = ((EventInfo)member).GetNode();
                 }
-                else if (member.MemberType == MemberTypes.Constructor)
-                {
+                else if (member.MemberType == MemberTypes.Constructor){
                     node = ((ConstructorInfo)member).GetNode();
-                }
-                else
-                {
+                } else {
                     node = ((TypeInfo)member).GetNode();
                 }
-                if (node != null)
-                {
+                if (node != null) {
                     typeNode.AddNode(node);
                 }
             }
@@ -73,14 +68,21 @@ namespace AssemblyBrowserLib.Extensions
                     let returnType = method.ReturnType.ToGenericTypeString()
                     let name = method.Name
                     let parameters = method.GetParameterNodes()
-                    select new Node("[method]", optional: "[extension]", accessModifier: accessModifier, typeModifier: typeModifier, fullType: fullType, returnType: returnType, name: name, nodes: parameters))
-                .ToList();
+                    select new Node("[method]", 
+                        optional: "[extension]", 
+                        accessModifier: accessModifier, 
+                        typeModifier: typeModifier, 
+                        fullType: fullType, 
+                        returnType: returnType, 
+                        name: name, 
+                        nodes: parameters)).ToList();
         }
 
         public static string ToGenericTypeString(this Type type)
         {
-            if (!type.IsGenericType)
+            if (!type.IsGenericType){
                 return type.Name;
+            }
 
             var genericTypeName = type.GetGenericTypeDefinition().Name;
             genericTypeName = genericTypeName[..genericTypeName.IndexOf('`')];
@@ -118,31 +120,39 @@ namespace AssemblyBrowserLib.Extensions
 
         public static string GetClassType(this Type type)
         {
-            if (type.GetMethods().Any(m => m.Name == "<Clone>$"))
+            if (type.GetMethods().Any(m => m.Name == "<Clone>$")) {
                 return "record";
-            if (type.IsClass)
+            }
+            if (type.IsClass) {
                 return "class";
-            if (type.IsEnum)
+            }
+            if (type.IsEnum) {
                 return "enum";
-            if (type.IsInterface)
+            }
+            if (type.IsInterface) {
                 return "interface";
-            if (type.IsGenericType)
+            }
+            if (type.IsGenericType) {
                 return "generic";
-            if (type.IsValueType && !type.IsPrimitive)
+            }
+            if (type.IsValueType && !type.IsPrimitive){
                 return "structure";
+            }
 
             return "";
         }
 
         public static string GetTypeModifier(this Type type)
         {
-            if (type.IsAbstract && type.IsSealed)
+            if (type.IsAbstract && type.IsSealed) {
                 return "static";
-            if (type.IsAbstract)
+            }
+            if (type.IsAbstract) {
                 return "abstract";
-            if (type.IsSealed)
+            }
+            if (type.IsSealed) {
                 return "sealed";
-
+            }
             return "";
         }
     }

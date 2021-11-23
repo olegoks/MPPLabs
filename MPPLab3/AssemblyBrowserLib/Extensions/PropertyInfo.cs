@@ -6,8 +6,7 @@ namespace AssemblyBrowserLib.Extensions
 {
     public static class PropertyInfoExtension
     {
-        public static Node GetNode(this PropertyInfo propertyInfo)
-        {
+        public static Node GetNode(this PropertyInfo propertyInfo){
             var accessModifier = propertyInfo.GetGetMethod(true).GetAccessModifier();
             var propertyType = propertyInfo.PropertyType.ToGenericTypeString();
             var fullType = propertyInfo.PropertyType.FullName;
@@ -16,8 +15,7 @@ namespace AssemblyBrowserLib.Extensions
             return new Node("[property]", accessModifier: accessModifier, type: propertyType, fullType: fullType, name: name, nodes: accessors);
         }
 
-        private static IEnumerable<Node> GetAccessorsNodes(this PropertyInfo propertyInfo)
-        {
+        private static IEnumerable<Node> GetAccessorsNodes(this PropertyInfo propertyInfo){
             return (from accessor in propertyInfo.GetAccessors(true)
                     let accessModifier = accessor.GetAccessModifier()
                     let name = accessor.Name

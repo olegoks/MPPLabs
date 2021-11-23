@@ -18,7 +18,7 @@ namespace AssemblyBrowserLib
         public string FullType { get; set; }
         public string ReturnType { get; set; }
         public string Name { get; set; }
-        public List<INode> Nodes { get; } = new();
+        public List<INode> Nodes { get; } = new List<INode>();
 
         public Node
         (

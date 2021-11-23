@@ -1,0 +1,5 @@
+D:\C++\MPPLabs\MPPLabs\MPPLab3\AssemblyBrowserLibrary\obj\Debug\AssemblyBrowserLibrary.csproj.CoreCompileInputs.cache
+D:\C++\MPPLabs\MPPLabs\MPPLab3\AssemblyBrowserLibrary\bin\Debug\AssemblyBrowserLibrary.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab3\AssemblyBrowserLibrary\bin\Debug\AssemblyBrowserLibrary.pdb
+D:\C++\MPPLabs\MPPLabs\MPPLab3\AssemblyBrowserLibrary\obj\Debug\AssemblyBrowserLibrary.dll
+D:\C++\MPPLabs\MPPLabs\MPPLab3\AssemblyBrowserLibrary\obj\Debug\AssemblyBrowserLibrary.pdb

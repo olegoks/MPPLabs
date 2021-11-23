@@ -6,8 +6,7 @@ using AssemblyBrowserLib;
 using Microsoft.Win32;
 using static System.String;
 
-namespace AssemblyBrowser.Wpf
-{
+namespace AssemblyBrowser.Wpf {
     public class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -19,7 +18,6 @@ namespace AssemblyBrowser.Wpf
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
         private void OpenAssembly()
         {
             var openFileDialog = new OpenFileDialog
@@ -41,7 +39,6 @@ namespace AssemblyBrowser.Wpf
                 OnPropertyChanged(nameof(Namespaces));
             }
         }
-
         private static void AddSpaces(IEnumerable<INode> nodes)
         {
             foreach (var node in nodes)
