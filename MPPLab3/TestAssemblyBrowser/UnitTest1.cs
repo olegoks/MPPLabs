@@ -1,13 +1,14 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AssemblyBrowserLibrary;
 using System.Collections.Generic;
+using Moq;
 
 namespace TestProject1
 {
     [TestClass]
     public class UnitTest1
     {
-        private const string PathToDll = "D:\\C++\\MPPLabs\\MPPLabs\\MPPLab3\\AssemblyBrowserLibrary\\bin\\Debug\\AssemblyBrowserLibrary.dll";
+        private const string PathToDll = "D:\\C++\\MPPLabs\\MPPLab3\\AssemblyBrowserLibrary\\bin\\Debug\\AssemblyBrowserLibrary.dll";
         private readonly List<INode> _nodes = AssemblyBrowser.GetAssemblyInfo(PathToDll);
 
         [TestMethod]
@@ -58,6 +59,40 @@ namespace TestProject1
             var extensionMethod1 = _nodes[0].nodes[2].nodes[_nodes[0].nodes[2].nodes.Count - 1];
             Assert.AreEqual("[extension]", extensionMethod1.optional);
             Assert.AreEqual("AddRange", extensionMethod1.name);
+        }
+        [TestMethod]
+        public void TestLoggerDirectoryByName() {
+
+            Mock<Logger.ILogger> mock = new Mock<Logger.ILogger>();
+            mock.Setup(l => l.GetDirectoryByLoggerName(It.IsAny<string>()))
+                .Returns<string>(name => "C:\\" + name);
+
+            string loggerName = "LoggerName";
+
+            Logger.ILogger logger = mock.Object;
+
+            string loggerDirectory = logger.GetDirectoryByLoggerName(loggerName);
+
+            Assert.AreEqual("C:\\LoggerName", loggerDirectory);
+
+        }
+
+        [TestMethod]
+        public void TestLoggerGetCurrentDirectory()
+        {
+
+            Mock<Logger.ILogger> mock = new Mock<Logger.ILogger>();
+            mock.Setup(l => l.GetCurrentDirectory())
+                .Returns("C:\\");
+
+            string trueloggerDirectory = "C:\\";
+
+            Logger.ILogger logger = mock.Object;
+
+            string loggerDirectory = logger.GetCurrentDirectory();
+
+            Assert.AreEqual(trueloggerDirectory, loggerDirectory);
+
         }
     }
 }

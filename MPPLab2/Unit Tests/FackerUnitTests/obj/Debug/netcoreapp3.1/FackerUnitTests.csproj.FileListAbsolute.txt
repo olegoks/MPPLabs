@@ -95,3 +95,5 @@ D:\C++\MPPLabs\MPPLabs\MPPLab2\Unit Tests\FackerUnitTests\obj\Debug\netcoreapp3.
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Unit Tests\FackerUnitTests\obj\Debug\netcoreapp3.1\FackerUnitTests.dll
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Unit Tests\FackerUnitTests\obj\Debug\netcoreapp3.1\FackerUnitTests.pdb
 D:\C++\MPPLabs\MPPLabs\MPPLab2\Unit Tests\FackerUnitTests\obj\Debug\netcoreapp3.1\FackerUnitTests.genruntimeconfig.cache
+D:\C++\MPPLabs\MPPLab2\Unit Tests\FackerUnitTests\obj\Debug\netcoreapp3.1\FackerUnitTests.dll
+D:\C++\MPPLabs\MPPLab2\Unit Tests\FackerUnitTests\obj\Debug\netcoreapp3.1\FackerUnitTests.pdb

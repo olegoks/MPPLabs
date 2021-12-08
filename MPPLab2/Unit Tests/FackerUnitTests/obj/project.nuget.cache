@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SJ54G4p3MpdfpmNjYgWI3zgrEIGY8vXionuNfAsGKM9A+ssa7y4BfMu/un+hJUpc0isuv17nVjEuSkRnbl49uQ==",
-  "success": true,
-  "projectFilePath": "D:\\C++\\MPPLabs\\MPPLabs\\MPPLab2\\Unit Tests\\FackerUnitTests\\FackerUnitTests.csproj",
+  "dgSpecHash": "UU148+kGT9MOvY9OiDvFZ3k6w8nNoBS3kp/MCzSQuIo1b23dNR35ZKl+Y8/rXIAr8WC2dED46T9p4rU/fJI1uw==",
+  "success": false,
+  "projectFilePath": "D:\\C++\\MPPLabs\\MPPLab2\\Unit Tests\\FackerUnitTests\\FackerUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
@@ -92,5 +92,15 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Не удалось найти сведения о проекте для \"D:\\C++\\MPPLabs\\MPPLab2\\Facker\\Facker.csproj\". Если вы используете Visual Studio, причина может заключаться в том, что проект выгружен или не является частью текущего решения. В этом случае выполните восстановление из командной строки. В противном случае причина может быть связана с тем, что файл проекта является недопустимым или отсутствуют целевые объекты, необходимые для восстановления.",
+      "libraryId": "D:\\C++\\MPPLabs\\MPPLab2\\Facker\\Facker.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

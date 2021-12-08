@@ -9,7 +9,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using TestsGenerator;
 using TestsGenerator.IO;
 namespace TestsGenerator
-
 {
     [TestClass]
     public class TestsGeneratorUnitTests
@@ -19,7 +18,7 @@ namespace TestsGenerator
         [TestInitialize]
         public void TestInit()
         {
-            string testFilesDirectory = "../../";
+            string testFilesDirectory = "..//..//";
             string testFilePath = testFilesDirectory + "TestFile.cs";
             string testClass1FilePath = testFilesDirectory + "TestClass1Test.cs";
             string testClass2FilePath = testFilesDirectory + "TestClass2Test.cs";
